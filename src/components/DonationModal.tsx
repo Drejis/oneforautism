@@ -170,13 +170,13 @@ const DonationModal = ({ isOpen, onClose }: DonationModalProps) => {
                 onClick={() => {
                   if (navigator.share) {
                     navigator.share({
-                      title: "I gave my $1 for Autism Healing!",
-                      text: "I just donated $1 to help children with autism receive healing through faith. Will you give yours?",
-                      url: "https://1forAutism.com",
+                      title: "I gave my $1 to Heal a Child!",
+                      text: "I just donated $1 to help children receive healing through faith. Will you give yours?",
+                      url: "https://healachild.com",
                     });
                   } else {
                     window.open(
-                      `https://twitter.com/intent/tweet?text=${encodeURIComponent("I gave my $1 for Autism Healing! 🙏 Join the movement: https://1forAutism.com")}`,
+                      `https://twitter.com/intent/tweet?text=${encodeURIComponent("I gave my $1 to Heal a Child! 🙏 Join the movement: https://healachild.com")}`,
                       "_blank"
                     );
                   }

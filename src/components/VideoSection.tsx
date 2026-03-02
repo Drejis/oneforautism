@@ -18,14 +18,14 @@ const VideoSection = () => {
           <div className="relative rounded-2xl overflow-hidden shadow-hope border border-border aspect-video">
             <iframe
               className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/koH_VNZ3gq4?autoplay=0&rel=0"
-              title="Autism Healing Testimony"
+              src="https://enterthehealingschool.org/video/54362/healed-of-severe-autism-"
+              title="Healed of Severe Autism – Healing Streams Testimony"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
           </div>
           <p className="text-center font-body text-sm text-muted-foreground mt-4">
-            High-spectrum autism healing testimony — Healing Streams Live Healing Services
+            Healed of severe autism — Healing Streams Live Healing Services
           </p>
         </div>
       </div>

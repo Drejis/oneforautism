@@ -16,14 +16,14 @@ const HeroSection = ({ onDonateClick }: HeroSectionProps) => {
 
       <div className="relative z-10 container mx-auto px-4 text-center py-32">
         <p className="font-body text-gold text-sm tracking-[0.3em] uppercase mb-4 animate-float">
-          A Faith-Powered Movement
+          Heal a Child Campaign
         </p>
         <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-6">
           Your <span className="text-gradient-gold">$1</span> Can Bring
           <br />
           <span className="text-gold-light">Healing & Hope</span>
           <br />
-          to a Child with Autism
+          to a Child
         </h1>
         <p className="font-body text-primary-foreground/80 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
           Join 1 million people of faith giving just $1 each to reach families worldwide
@@ -38,7 +38,7 @@ const HeroSection = ({ onDonateClick }: HeroSectionProps) => {
         </button>
 
         <p className="text-primary-foreground/50 font-body text-sm mt-6">
-          100% goes to reaching families with healing resources
+          100% goes to reaching families with healing resources — Heal a Child Campaign
         </p>
       </div>
 
