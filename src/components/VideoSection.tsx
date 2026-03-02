@@ -18,7 +18,7 @@ const VideoSection = () => {
           <div className="relative rounded-2xl overflow-hidden shadow-hope border border-border aspect-video">
             <iframe
               className="absolute inset-0 w-full h-full"
-              src="https://enterthehealingschool.org/video/54362/healed-of-severe-autism-"
+              src="https://www.youtube.com/embed/koH_VNZ3gq4?autoplay=0&rel=0"
               title="Healed of Severe Autism – Healing Streams Testimony"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -26,6 +26,15 @@ const VideoSection = () => {
           </div>
           <p className="text-center font-body text-sm text-muted-foreground mt-4">
             Healed of severe autism — Healing Streams Live Healing Services
+            <span className="mx-2">•</span>
+            <a
+              href="https://enterthehealingschool.org/video/54362/healed-of-severe-autism-"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold hover:underline"
+            >
+              Watch more testimonies
+            </a>
           </p>
         </div>
       </div>

@@ -9,6 +9,7 @@ import HowItWorks from "@/components/HowItWorks";
 import DonationModal from "@/components/DonationModal";
 import SocialProofTicker from "@/components/SocialProofTicker";
 import CampaignFooter from "@/components/CampaignFooter";
+import BackToTop from "@/components/BackToTop";
 
 const Index = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -25,6 +26,7 @@ const Index = () => {
       <CampaignFooter onDonateClick={() => setModalOpen(true)} />
       <DonationModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
       <SocialProofTicker />
+      <BackToTop />
     </div>
   );
 };
