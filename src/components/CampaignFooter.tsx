@@ -40,9 +40,9 @@ const CampaignFooter = ({ onDonateClick }: FooterProps) => {
 
         <div className="border-t border-faith-foreground/10 pt-6 text-center">
           <p className="font-body text-xs text-faith-foreground/40">
-            © 2025 1forAutism.com — A campaign of Healing Streams Live Healing Services & The Healing School.
+            © 2025 Heal a Child Campaign — A campaign of Healing Streams Live Healing Services & The Healing School.
             <br />
-            All donations are processed securely. Contact: hello@1forautism.com
+            All donations are processed securely. Contact: hello@healachild.com
           </p>
         </div>
       </div>
