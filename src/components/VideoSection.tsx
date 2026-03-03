@@ -10,7 +10,7 @@ const VideoSection = () => {
             See What God Is Doing
           </h2>
           <p className="font-body text-muted-foreground max-w-xl mx-auto">
-            Real testimonies of children healed through faith at Healing Streams Live Healing Services
+            Real testimonies of children healed by the power of God at the Healing Streams Live Healing Services with Pastor Chris
           </p>
         </div>
 
