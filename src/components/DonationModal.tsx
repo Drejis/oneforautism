@@ -162,29 +162,65 @@ const DonationModal = ({ isOpen, onClose }: DonationModalProps) => {
               <h3 className="font-display text-2xl font-bold text-foreground mb-2">
                 God Bless You! 🙏
               </h3>
-              <p className="font-body text-muted-foreground mb-6">
+              <p className="font-body text-muted-foreground mb-4">
                 Your ${donationAmount} donation is bringing healing to a family right now.
               </p>
 
-              <button
-                onClick={() => {
-                  if (navigator.share) {
-                    navigator.share({
-                      title: "I gave my $1 to Heal a Child!",
-                      text: "I just donated $1 to help children receive healing through faith. Will you give yours?",
-                      url: "https://healachild.com",
-                    });
-                  } else {
-                    window.open(
-                      `https://twitter.com/intent/tweet?text=${encodeURIComponent("I gave my $1 to Heal a Child! 🙏 Join the movement: https://healachild.com")}`,
-                      "_blank"
-                    );
-                  }
-                }}
-                className="w-full py-4 bg-primary text-primary-foreground font-body font-bold rounded-xl hover:scale-[1.02] transition-all mb-3"
-              >
-                🔥 Donate $1 & Challenge 5 Friends
-              </button>
+              <div className="bg-secondary rounded-xl p-4 mb-5 text-left">
+                <p className="font-body text-sm font-semibold text-foreground mb-1">🔥 Invite 5 Friends to Join!</p>
+                <p className="font-body text-xs text-muted-foreground">
+                  "I just gave ${donationAmount} to help a child receive healing by the power of God through the Healing Streams with Pastor Chris. It only takes $1 to change a life. Will you give yours? 🙏"
+                </p>
+              </div>
+
+              <div className="space-y-2 mb-4">
+                <button
+                  onClick={() => {
+                    const text = `I just gave $${donationAmount} to help a child receive healing by the power of God through the Healing Streams with Pastor Chris. It only takes $1 to change a life. Will you give yours? 🙏`;
+                    const url = "https://healachild.com";
+                    window.open(`https://wa.me/?text=${encodeURIComponent(text + " " + url)}`, "_blank");
+                  }}
+                  className="w-full py-3 bg-[hsl(142,70%,40%)] text-white font-body font-bold rounded-xl hover:scale-[1.02] transition-all flex items-center justify-center gap-2"
+                >
+                  💬 Share on WhatsApp
+                </button>
+
+                <button
+                  onClick={() => {
+                    const text = `I just gave $${donationAmount} to help a child receive healing by the power of God through the Healing Streams with Pastor Chris. It only takes $1 to change a life. Will you give yours? 🙏`;
+                    const url = "https://healachild.com";
+                    window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(text)}`, "_blank");
+                  }}
+                  className="w-full py-3 bg-[hsl(220,46%,48%)] text-white font-body font-bold rounded-xl hover:scale-[1.02] transition-all flex items-center justify-center gap-2"
+                >
+                  📘 Share on Facebook
+                </button>
+
+                <button
+                  onClick={() => {
+                    const text = `I just gave $${donationAmount} to help a child receive healing by the power of God through the Healing Streams with Pastor Chris. It only takes $1 to change a life. Will you give yours? 🙏`;
+                    window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text + " https://healachild.com")}`, "_blank");
+                  }}
+                  className="w-full py-3 bg-foreground text-background font-body font-bold rounded-xl hover:scale-[1.02] transition-all flex items-center justify-center gap-2"
+                >
+                  ✖️ Share on X (Twitter)
+                </button>
+
+                <button
+                  onClick={() => {
+                    if (navigator.share) {
+                      navigator.share({
+                        title: "Heal a Child — Give Just $1",
+                        text: `I just gave $${donationAmount} to help a child receive healing by the power of God through the Healing Streams with Pastor Chris. Will you give yours?`,
+                        url: "https://healachild.com",
+                      });
+                    }
+                  }}
+                  className="w-full py-3 border-2 border-border text-foreground font-body font-bold rounded-xl hover:scale-[1.02] transition-all flex items-center justify-center gap-2"
+                >
+                  📤 More Sharing Options
+                </button>
+              </div>
 
               <button onClick={handleClose} className="font-body text-sm text-muted-foreground hover:text-foreground">
                 Close
