@@ -16,13 +16,15 @@ const VideoSection = () => {
 
         <div className="max-w-4xl mx-auto">
           <div className="relative rounded-2xl overflow-hidden shadow-hope border border-border aspect-video">
-            <iframe
-              className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/koH_VNZ3gq4?autoplay=0&rel=0"
-              title="Healed of Severe Autism – Healing Streams Testimony"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+            <video
+              className="absolute inset-0 w-full h-full object-cover"
+              controls
+              poster="https://hsch.ceflixcdn.com/eths3/vow_febwk2.jpg"
+              preload="metadata"
+            >
+              <source src="https://hsch.ceflixcdn.com/vow_febwk2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
           <p className="text-center font-body text-sm text-muted-foreground mt-4">
             Healed of severe autism — Healing Streams Live Healing Services
